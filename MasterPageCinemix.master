@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageCinemix.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Estilos/Estilos.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <div id="encabezado">
+                    <table id="tablaEnc">
+                        <tr>
+                            <td rowspan="2">
+                                <img id="logo" src="Imagenes/logoCinemix.png" />
+                            </td>
+                            <td colspan="2">
+                                <h1>Cinemix</h1>
+                            </td>
+                        </tr>
+                        <tr id="listasHeader">
+                            <td>
+                                <asp:Label ID="Label1" runat="server" Text="Ciudad: "></asp:Label>
+                                <asp:DropDownList ID="ddlCiudad" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlCiudad_SelectedIndexChanged" Width="200px">
+                                </asp:DropDownList>
+                            </td>
+                            <td>
+                                <asp:Label ID="Label2" runat="server" Text="Cine: "></asp:Label>
+                                <asp:DropDownList ID="ddlCine" runat="server" AutoPostBack="True" Width="200px" OnSelectedIndexChanged="ddlCine_SelectedIndexChanged"></asp:DropDownList>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <nav>
+                    <a href="Inicio.aspx">Inicio</a> | <a href="Historia.aspx">Historia</a>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </section>
+            </main>
+            <footer class="footer">
+                <table id="tablaPie">
+                    <tr>
+                        <td><b>Atención telefónica</b></td>
+                        <td rowspan="2"><a href="AcercaDe.aspx">Sobre Cinemix</a></td>
+                        <td rowspan="2">
+                            <img src="Imagenes/Paypal.png" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>55 999-999</b>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
