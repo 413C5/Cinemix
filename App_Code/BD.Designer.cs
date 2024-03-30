@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Documentos\Sexto Semestre\Parcial 2\Soluciones de Programacion Movil\Tareas\Cinemix\Cinemix\App_Code\BD.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Alejandro\Documents\cinemix\App_Code\BD.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
